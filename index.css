@@ -1,0 +1,181 @@
+*{
+ padding:0;
+ margin:0;
+ box-sizing: border-box;   
+}
+.annie-use-your-telescope-regular {
+    font-family: "Annie Use Your Telescope", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+ 
+
+.wrapper{
+    min-height: 100vh;
+    width:100%;
+}
+.fake-wrapper{
+    height:100vh;
+    width:100%;
+    position: fixed;
+    top:0;
+    left:0;
+    background-image: url('assets/wallpaper.jpg');
+    background-position: 50% 0%;
+
+
+}
+
+.menu{
+    position: fixed;
+    top:20vh;
+    left:7vw;
+    width:300px;
+    background-color: mediumslateblue;
+    padding:30px 60px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    border: 2px solid #FFF;
+}
+.menu a, .menu a:visited, .menu a:active, .menu a:hover, .menu a:focus{
+    color:#FFF;
+    font-size:22px;
+    text-decoration: none;
+
+}
+.menu a:hover{
+    color:#b5e2ff;
+}
+.memories{
+    width:60%;
+    position: absolute;
+    top:20vh;
+    right:7vw;
+    backdrop-filter: blur(10px);
+    background-color: rgba(124, 104, 238, 0.829);
+    border-radius: 20px;
+    border:2px solid white;
+    padding:60px;
+
+}
+.title{
+    text-align: center;
+    font-size:40px;
+    color:#FFF;
+    padding-top:30px;
+    padding-bottom:30px;
+    padding-left:40px;
+    padding-right:40px;
+    font-family: "Annie Use Your Telescope", serif;
+}
+
+.custom-card{
+    margin-top:80px;
+    padding:40px 20px;
+    border-top:1px solid white;
+}
+.custom-card-title{
+    text-align:left;
+    font-size:30px;
+    color:#FFF;
+    font-weight:bold;
+}
+.custom-card-content{
+    margin-top:40px;
+}
+.custom-card-content p{
+    color:#cfecff;
+    font-size:25px;
+    padding:0 20px;
+    padding-bottom:40px;
+    font-family: "Annie Use Your Telescope", serif;
+}
+.mobile-menu{
+    display: none;
+}
+.overlay{
+    display: none;
+}
+
+#carouselExampleControlsKibb{
+ img{
+   aspect-ratio: 929/522;
+ }
+}
+
+
+@media(max-width:1266px){
+    .menu{
+        left:2vw;
+    }
+    .memories{
+        right:2vw;
+    }
+}
+
+@media(max-width:876px){
+    .menu{
+        display:none;
+    }
+    .memories{
+       left:2vw;
+       right:2vw;
+       width:96vw;
+       padding:20px;
+
+    }
+    .custom-custom-card{
+        margin-top:30px;
+    }
+    .mobile-menu{
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top:0;
+        left:0;
+        height:80px;
+        width:100%;
+        background-color: #b5e2ff;
+        z-index:200;
+        color:mediumslateblue;
+        font-weight: bold;
+        font-size:20px;
+    }
+    .overlay{
+        background-color: white;
+        position: fixed;
+        top:0;
+        left:0;
+        width:100vw;
+        height:100vh;
+        z-index:2000;
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:20px;
+        font-size:30px;
+        padding:20px;
+
+        
+    }
+    .overlay button{
+        position: absolute;
+        top:20px;
+        right:20px;
+        background-color: mediumslateblue;
+        color:white;
+        font-size:30px;
+        padding:20px;
+        border:none;
+    }
+    .overlay a, .overlay a:visited, .overlay a.active{
+        color:mediumslateblue;
+        text-decoration: none;
+    }
+
+}
